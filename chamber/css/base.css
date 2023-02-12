@@ -1,0 +1,363 @@
+:root {
+    --primary-color: #E5E5E5;
+    --secondary-color: #466EC3;
+    --accent1-color: #faf9f9;
+    --accent2-color: #ebe8e8;
+    --primary-dark: #888888;
+    --active-link: yellow;
+    --main-text:black;
+    --primary-boarder: black;
+  
+    /* Possible Fonts to use on page */
+    --heading-font: "Merriweather", serif;
+    /*--heading-font: "Verdana", Geneva, sans-serif;  */
+    --paragraph-font: "Georgia", Times;
+    --link-font: "Verdana", Geneva, sans-serif;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--main-text);
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  
+  p, a, li, button {
+    font-family: var(--paragraph-font);
+  }
+  
+  header, main, footer {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 1%;
+    border: 1px solid var(--primary-boarder);
+    background-color: var(--primary-dark);
+    border-radius: 25px;
+  }
+  
+  #chambermeeting {
+    display:block;
+    margin: 0 auto;
+    padding: 0%;
+    border: 1px solid var(--primary-boarder);
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+    /*this keeps the text within the boarders*/
+    overflow: hidden;
+  
+  }
+  
+  #chambermeeting h2, #discoverhead {
+    text-align: center;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%)
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  header {
+    margin-top: 1%;
+  }
+  footer {
+    margin-bottom: 1%;
+  }
+  
+  #hamburgernav a{
+    display: block;
+    background-color: rgba(220, 220, 220, 0.5);
+    color: var(--main-text);
+    text-decoration: none;
+    padding: 1rem;
+    border-bottom: 1px solid  rgba(0,0,0,0.5);
+  }
+  
+  #hamburgernav a:hover {
+    background-color: rgba(0,0,0,0.1);
+  }
+  
+  
+  #primarynav .activebutton,#hamburgernav .activebutton {
+    background-color: var(--accent1-color);
+    font-weight: bold;
+  }
+  
+  #callToAction a{
+    position: absolute;
+    align-items: center;
+    padding: 2px;
+    background-color: yellow;
+    color: var(--main-text);
+    text-decoration: none;
+    border: 1px solid  rgba(0,0,0,0.5);
+    outline: 1px solid var(--secondary-color);
+    margin-left: 3rem;
+    margin-top: 1rem;
+  }
+  
+  #callToAction a:hover{
+    background-color: #888888;
+    
+  }
+  
+  #callToAction {
+    margin-top: 2%;
+  }
+  
+  #join a{
+    display: block;
+    background-color: #466EC3;
+    color: var(--main-text);
+    text-decoration: none;
+    border: 1px solid  rgba(0,0,0,0.5);
+    outline: 1px solid var(--secondary-color);
+  }
+  #join {
+    padding: 1rem;
+    display: none;
+  }
+  
+  #join a h3 {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  #join a:hover{
+    background-color: rgba(175, 173, 173, 0.1);
+  }
+  
+  #join p , #newsReleases p{
+    text-align: center;
+  }
+  
+  
+  #primarynav, #hamburgernav {
+    text-align: center;
+    display: none;
+    list-style-type: none;
+    margin-right: 7%;
+    border-top: none;
+    border-bottom: none;
+  }
+  
+  #main_index {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-rows: 0.5fr 0.1fr 0.5fr 0.5fr;
+    background-color: var(--accent1-color)
+  }
+  
+  .headings {
+    text-align: center;
+    margin-left: 0.1%;
+  }
+  main section, main section div {
+    background-color: rgba(0,0,0,0.2);
+    border: 1px solid rgba(0,0,0,0.5);
+  
+  }
+  
+  #callToAction img {
+    width: 100%;
+    display: block;
+  
+  }
+  #events h3, #weather h3, #newsReleases h3, #spotLightTwo h3, #spotLightOne h3, #spotLightThree h3 {
+    background-color: var(--accent2-color);
+    margin: 1%;
+    border: 1px solid rgba(0,0,0,0.5);
+    text-align: center;
+    background-color: var(--accent2-color);
+    padding: 1rem
+    }
+  
+  #weather div, h4 ,p{
+    text-align: center;
+  }
+  
+  #weather figure {
+    text-align: center;
+    color: var(--primary-dark)
+  }
+  
+  #events {
+    text-align: center;
+  }
+  
+  #events img{
+    width: 100%;
+  }
+  
+  #spotLightOne .sl1image, .sl2image, .sl21image, .sl3image, .newsrelease {
+    width: 100%;
+  
+  }
+
+  #threeimagemains {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 2%;
+  }
+  
+  
+  header div {
+    margin-bottom: 1rem;
+  }
+  
+  header div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header button {
+    color: white;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    background-color: var(--secondary-color);
+    border: 1px solid rgba(0,0,0,0.5);
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  header button:hover {
+    background-color: #1D3461;
+  }
+  
+  #threeImageMain {
+    display: flex;
+    gap: 0.25rem;
+  }
+
+  #spotLightThree {
+    display: none;
+  }
+  
+  #hamburgernav.open {
+    display: block;
+  }
+  
+  /* this is for the button open to be the lines closed to have the X */
+  /*nth-child alows you to access the diffent spans in the html <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button> */
+  #hamburgerbtn.open span:nth-child(1) {display: none;}
+  #hamburgerbtn.open span:nth-child(2) {display: block;}
+  #hamburgerbtn span:nth-child(1) {display: block;}
+  #hamburgerbtn span:nth-child(2) {display: none;} /* <span>X</span> does not show*/
+  
+  
+  .logo img {
+    width: 10rem;
+    border-radius: 25px;
+  }
+  
+  .logo { 
+    display: flex;
+    align-items: center;
+  }
+  
+  .currentdate {
+    background-color: var(--accent2-color);
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0,0.5);
+    text-align: center;
+  }
+  
+  .social {
+    margin-top: 1.5rem;
+    display: inline;
+  }
+  .social img {
+    width: 3rem;
+  }
+  
+  .footerbuild {
+    display: block;
+    margin: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footerbuild a:link {
+    color: black;
+    background:transparent; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  .footerheadings, .footercontact{
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  .footerbuild a:visited {
+    color: var(--active-link);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .footerbuild a:hover {
+    background-color: #466EC3;
+  }
+  
+  .footercontact {
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .footerlogo {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .footerheadings {
+    display: block;
+  }
+  .footerlogo img {
+    width: 12.5rem;
+    border-radius: 25px;
+  }
+  .footmaps img{
+    width: 2rem;
+  }
+  .footercontact img{
+    width: 2rem;
+  }
+  
+  .copyrightupdatesmall, .copyrightupdatemedium, .copyrightupdatelarge{
+    display: block;
+    text-align: center;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(0,0,0,0.5);
+  }
+  .copyrightupdatesmall {
+    display: block;
+    text-align: center;
+  }
+  .copyrightupdatemedium {
+    display: none;
+    text-align: center;
+  }
+  .copyrightupdatelarge {
+    display: none;
+    text-align: center;
+  }
+  
