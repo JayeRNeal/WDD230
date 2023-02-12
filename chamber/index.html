@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Home Page Build</title>
+    <meta name="description"
+  content="The Chamber of Commerce Project is a website project that will be used throughout the course as a learning project. 
+  The goal of the project is to meet the course outcomes and objectives through sequential module content and directed development 
+  specifications. You will select the municipality or town, such as your home town, to be the subject of the site. 
+  The project provides opportunities to apply the concepts presented in the weeks by planning, designing, developing, 
+  and maintaining a chamber site related site. This project will prepare you with a foundation upon which to complete the term 
+  project at the end of the semester.">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/large.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+
+  <script src="js/windchill.js" defer></script>
+  <script src="js/indexbanner.js" defer></script>
+  
+</head>
+
+<body>
+  <header>
+    <div>
+      <div class=" logo">
+        <img src="images/jplogo.webp" alt="JP Logo">
+        <section class="headings">
+          <h1>Jaye Parks</h1>
+          <h2>Chamber of Commerce</h2>
+        </section>
+      </div>
+
+      <nav>
+        <ul id="primarynav">
+          <li><a class="activebutton" href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social">
+        <a href="https://www.linkedin.com" target="blank"><img src="images/inicon.png" alt="linkedin" ></a>
+        <a href="https://www.facebook.com" target="blank"><img src="images/fbicon.png" alt="Facebook"></a>
+
+        <button id="hamburgerbtn"><span>&#9776;</span><span>X</span></button>
+      </div>
+    </div>
+
+    <ul id="hamburgernav">
+      <li><a class="activebutton" href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <h2 class="currentdate">current date</h2>
+    <section id="chambermeeting">
+      <div>
+        <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2>
+      </div>
+    </section>
+  </header>
+
+  <main id="main_index">
+
+    <section id="callToAction">
+      <div>
+        <a href="join.html">
+          <h3>Join Our Chamber</h3>
+        </a>
+
+        <img src="images/wdd230_400.png" alt="chamber" sizes="100vw" srcset="images/wdd230_600.png 600w, images/wdd230_800.jpg 800w">
+      </div>
+    </section>
+
+    <section id="events">
+      <h3>Events in Jaye Park</h3>
+      <p>The Novel Institute Sat March, 4 2023 at 06:00 pm</p>
+      <img src="images/events.jpeg" Alt="Upcoming Events">
+      <p>All ticket must be bought prior to the events.</p>
+    </section>
+
+    <section id="weather">
+      <h3>Today's Weather</h3>
+      <p>Temperature: <span id="temperature"></span> °F</p>
+      <p>Wind Speed: <span id="windspeed"></span> MPH</p>
+      <p>Wind Chill: <span id="windchill"></span> °F</p>
+<figure>
+      <img src="images/weathers.ico" alt="" id="weather-icon"> <!--fix image-->
+</figure>
+    </section>
+
+    <section id="join">
+      <a href="join.html">
+        <h3>Join Us!</h3>
+      </a>
+      <p>Find out how to join our chamber of commerce and help your local business thrive!</p>
+    </section>
+
+    <section id="newsReleases">
+      <h3>New Releases</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officiis officia praesentium laborum 
+          iusto sapiente eveniet nostrum! Quis eveniet nesciunt dignissimos. Sequi magnam adipisci quo a 
+          consequuntur quaerat excepturi porro!</p>
+    </section>
+
+    <section id="threeimagemains">
+      <div id="spotLightOne">
+
+        <h3>Top Ten Things to do in Jaye Parks</h3>
+        <img class="sl1image" src="images/fireworks.jpeg" Alt="Image of Fireworks">
+      </div>
+
+      <div id="spotLightTwo">
+        <h3>Visit Our Famous Museum</h3>
+        <img class="sl21image" src="images/museum.jpeg" Alt="Image of Woman Looking at Art">
+      </div>
+
+      <div id="spotLightThree">
+          <h3>Attend Our University</h3> 
+        <img class="sl3image" src="images/knowledge.jpeg" Alt="JPU University"> <!--Fix image-->
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footerbuild">
+      <div class="footerlogo">
+        <img src="images/jplogo.png" alt="Jaye Parks Logo">
+        <section class="footerheadings">
+          <h2>Jaye Parks</h2>
+          <h3>Chamber of Commerce</h3>
+          <p>11209 South St. Zimbabwe, AF 99294</p>
+        </section>
+      </div>
+      <div class="footercontact">
+        <a href="contactus@kpchamber.info">contactus@jayeparks.info</a>
+        <p>(801) 997-4265</p>
+
+        <img class="imagepin" src="images/googlemapspin.jpg" alt="Map pin">
+        <a href="https://www.google.com/maps/" target="_blank">Map Location</a>
+      </div>
+    </div>
+    <div class="copyrightupdatesmall">
+      <p>&copy; <span id="copyrightupdatesmall_year"></span> Jaye Parks Chamber Project</p>
+      <p>Jourdon Neal</p>
+      <p>WDD 230 Project</p>
+      <p>Last Updated: <span id="copyrightupdatesmall_lastup"></span></p>
+    </div>
+    <div class="copyrightupdatemedium">
+      <p>&copy; <span id="copyrightupdatemedium_year"></span> Jaye Parks Chamber Project .:|:. Jourdon Neal .:|:. WDD
+        230 Project
+      </p>
+      <p>Last Updated: <span id="copyrightupdatemedium_lastup"></span></p>
+    </div>
+    <div class="copyrightupdatelarge">
+      <p>&copy; <span id="copyrightupdatelarge_year"></span> Jaye Parks Chamber Project .:|:. Jourdon Neal .:|:. WDD
+        230 Project .:|:. Last Updated: <span id="copyrightupdatelarge_lastup"></span></p>
+    </div>
+    <script src="js/footer.js"></script>
+  </footer>
+</body>
+
+</html>
