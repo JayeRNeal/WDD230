@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+
+    <link rel="stylesheet" href="localStorage.css">
+</head>
+
+<body>
+    <main>
+        <h1>📅 Using localStorage</h1>
+        <p>This demonstration page keeps track of the total number of visits by user utilizing the localStorage option of the Web Storage API.</p>
+    
+        <p><span class="label">Number of Visits: </span><span id="visits"></span></p>
+        <hr>
+        <p>Timestamp is based upon time since “Unix epoch” 1970-01-01T00:00:00Z (UTC),<br>i.e., January 1, 1970.</p>
+        <p><code>Date.now(): </code> <span id="today"></span> (milliseconds)</p>
+        <hr>
+        <p><span class="label">Days until Christmas:</span> <span id="daysleft"></span></p>
+       
+        <script src="localStorage.js"></script>
+
+    </main>
+    
+</body>
+</html>
