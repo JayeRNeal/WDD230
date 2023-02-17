@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="The goal of this activity is to alleviate some of the load time by 
+    waiting until the page assets are actually needed by the user as they scroll.">
+  <title>Lesson 7 - Lazy Loading Images</title>
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/lazyload.css" type="text/css">
+  <script src="js/lazyload.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+
+    <h1><B>
+        Progressive Loading (Images)</B>
+    </h1>
+  </header>
+  <main>
+    <picture class="lazypics">
+      <img src="images/imageph300X400.jpg" data-src="images/nature.jpg" alt="placeholder image 1">
+      <img src="images/imageph300X400.jpg" data-src="images/cat.jpg" alt="placeholder image 2">
+      <img src="images/imageph300X400.jpg" data-src="images/art.jpg" alt="placeholder image 3">
+      <img src="images/imageph300X400.jpg" data-src="images/lady.png" alt="placeholder image 4">
+      <img id="lastload" src="images/imageph300X400.jpg" data-src="images/device.jpg" alt="placeholder image 5">
+    </picture>
+  </main>
+  <footer>
+    <h2> </h2>
+  </footer>
+
+</body>
+
+</html>

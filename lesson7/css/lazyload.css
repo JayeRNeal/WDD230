@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #E5E5E5;
+  --secondary-color: #466EC3;
+  --accent1-color: #faf9f9;
+  --accent2-color: #ebe8e8;
+  --primary-dark: #888888;
+  --active-link: yellow;
+  --main-text:black;
+  --primary-boarder: black;
+
+  /* Possible Fonts to use on page */
+  --heading-font: "Merriweather", serif;
+  /*--heading-font: "Verdana", Geneva, sans-serif;  */
+  --paragraph-font: "Georgia", Times;
+  --link-font: "Verdana", Geneva, sans-serif;
+}
+
+/* relook at thisry-n
+body {
+  background-color: var(--primary-dark);
+} */
+
+h1 {
+  font-family: var(--heading-font);
+  color: var(--main-text);
+  font-size: 30px;
+  max-width: 500px;
+  text-align: center;
+  margin: 2em auto;	
+}
+
+h2 {
+  margin: 2em auto;	
+  text-align: center;
+}
+
+.lazypics {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+	gap: 1em;	
+}
+
+.lastload {
+  margin-bottom: 15%;
+}
