@@ -120,6 +120,63 @@
       flex-direction: column;
     }
   
+    /*discovery page*/
+    #discovermain {
+      padding: 2%;
+      display: grid;
+      gap: 0.5rem;
+      grid-template-columns: 1fr 1fr;
+      background-color: var(--accent1-color)
+     }
+      
+    #discovermain img:hover{
+      box-shadow: 0 0 35px var(--primary-dark);
+    }
+      
+    #discoverimages {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    #discoverimages1 {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    #discoverimages2 {
+      grid-column: 1;
+      grid-row: 3;
+    }
+    #discoverimages3 {
+      grid-column: 1;
+      grid-row: 4;
+    }
+    #discoverimages4 {
+      grid-column: 1;
+      grid-row: 5;
+    }
+
+    .visits{
+      display: block;
+    }
+      
+    /* join page */
+    #membershipapp {
+      padding: 2%;
+      display: grid;
+      gap: 0.5rem;
+      grid-template-columns: 1fr 1fr;
+      background-color: var(--accent1-color)
+    }
+      
+    #detailedinformation {
+      display: grid;
+    }
+      
+    .subappBtnsm {
+      display: none;
+    }
+    .subappBtn{
+      display: block;
+    }
   
   
   

@@ -360,4 +360,43 @@
     display: none;
     text-align: center;
   }
+/* discover page*/
+
+  #carnival_dis, #tablemountain_dis, #otter_dis, #ctstadium_dis,#wine_dis {
+    display: none;
+  }
   
+  #discovermain img{
+    padding: 2%;
+    width: 96%;
+  }
+  
+  #discovermain h3, #discoverhead h2{
+    background-color: var(--accent2-color);
+    margin: 1%;
+    border: 1px solid rgba(0,0,0,0.5);
+    text-align: center;
+    background-color: var(--accent2-color);
+    padding: 1rem;
+  }
+  
+  .statupdate img {
+    background-color: var(--primary-dark);
+    width: 96%;
+  }
+  
+  #discovermain {
+    display: block;
+    grid-template-columns: 1fr;
+  }
+  
+  #discoverhead {
+    border: 1px solid rgba(0,0,0,0.5);
+    color: var(--accent1-color);
+    padding: 2%;
+    border-radius: 25px;
+  }
+
+  .visits{
+    display: block;
+  }

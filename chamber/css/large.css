@@ -150,6 +150,77 @@
       display: block;
       text-align: center;
     }
-  
+    
+    /* for the discover page */
+    #carnival_dis, #tablemountain_dis, #otter_dis, #ctstadium_dis,#wine_dis {
+      display: block;
+}
+
+    #discoverimages {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    #discoverimages1 { 
+      grid-column: 1;
+      grid-row: 2;
+    }
+    #discoverimages2 {
+      grid-column: 1;
+      grid-row: 3;
+    }
+    #discoverimages3 {
+      grid-column: 1;
+      grid-row: 4;
+    }
+    #discoverimages4 {
+      grid-column: 1;
+      grid-row: 5;
+    }
+    #carnival_dis {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    #tablemountain_dis{
+      grid-column: 2;
+      grid-row: 2;
+    }
+    #otter_dis{
+      grid-column: 2;
+      grid-row: 3;
+    }
+    #ctstadium_dis {
+      grid-column: 2;
+      grid-row: 4; 
+    }
+    #wine_dis {
+      grid-column: 2;
+      grid-row: 5;
+    }
+    #discovermain p{
+      padding-left: 1%;
+    }
+    #discovermain {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    #discoverhead h2{
+      max-width: 1500px;
+    }
+
+    .subappBtn {
+      margin-left: 25%;
+      width: 50%;
+    }
+    .visits {
+      display: block;
+    }
+
+
+/*Directory page */
+
+    .businesscards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
   
   }
