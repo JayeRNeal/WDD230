@@ -1,0 +1,28 @@
+@media only screen and (min-width: 700px) {
+  
+  
+    * {
+      margin: 0px auto;
+      padding: 5px;
+      box-sizing: border-box;
+  
+    }
+  
+  table {
+    letter-spacing: 5px;
+    padding: 0%;
+  } 
+  
+  
+  h1{
+    font-size: 60px;
+  }
+  body {
+    font-size: 40px;
+    
+  }
+  
+  tfoot {
+    font-size: 25px;
+  }
+  }

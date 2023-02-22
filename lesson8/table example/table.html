@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Table template</title>
+    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Table template</h1>
+    <table>
+        <tr>
+          <td>&nbsp;</td>
+          <td>Knocky</td> <!--The smallest container inside a table is a table cell, which is created by a <td> element ('td' stands for 'table data')-->
+          <td>Flor</td>
+          <td>Ella</td>
+          <td>Juan</td>
+        </tr>
+        <tr> <!--To stop this row from growing and start placing subsequent cells on a second row, we need to use the <tr> element ('tr' stands for 'table row')-->
+          <td>Breed</td>
+          <td>Jack Russell</td>
+          <td>Poodle</td>
+          <td>Streetdog</td>
+          <td>Cocker Spaniel</td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td>16</td>
+          <td>9</td>
+          <td>10</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Owner</td>
+          <td>Mother-in-law</td>
+          <td>Me</td>
+          <td>Me</td>
+          <td>Sister-in-law</td>
+        </tr>
+        <tr>
+          <td>Eating Habits</td>
+          <td>Eats everyone's leftovers</td>
+          <td>Nibbles at food</td>
+          <td>Hearty eater</td>
+          <td>Will eat till he explodes</td>
+        </tr>
+        <colgroup> <!--<col> elements are specified inside a <colgroup> container just below the opening <table>-->
+            <col />
+            <col style="background-color: yellow" span="2" />
+        </colgroup>
+          <tr>
+            <th>Data 1</th> <!--th stands for table header. -->
+            <th>Data 2</th>
+          </tr>
+          <tr>
+            <td>Calcutta</td>
+            <td>Orange</td>
+          </tr>
+          <tr>
+            <td>Robots</td>
+            <td>Jazz</td>
+          </tr>
+          
+      </table>
+
+  </body>
+</html>

@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	margin: 0;
+	border: 1px solid #bbb;
+	padding: 0.5rem;
+	width: 760px;
+	background-color: #abe;
+}
+
+input,
+select,
+textarea,
+button {
+	padding: 0.5rem;
+	font-family: Arial, sans-serif;
+}
+
+label {
+	margin-right: 0.5rem;
+	width: 100px;
+	text-align: right;
+}
+
+.formfield {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem;
+}
+
+input:required,
+select:required,
+textarea:required {
+	border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+	border-color: green;
+}

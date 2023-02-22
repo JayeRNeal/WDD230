@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="contact-form.css">
+    <script src="contact-form.js"></script>
+
+</head>
+<body>
+    <main>
+	<h1>📧 Send Us a Message</h1>
+	<form method="get">
+		<div id="formmessage"></div>
+		<label for="fullname">Name:</label>
+		<input type="text" id="fullname" name="fullname" required placeholder="Your full name" />
+		<label for="email">Email address:</label>
+		<input type="email" id="email" name="email" required />
+		<label for="phone">Phone number:</label>
+		<input type="tel" id="phone" name="phone" required oninvalid="this.setCustomValidity('Please enter a valid phone number! ") oninput="this.setCustomValidity('')"/>
+		<label for="keyphrase">Key Phrase:</label>
+		<input type="text" id="keyphrase" name="keyphrase" pattern="[a-z]*" required /> <!-- {min,max} -->
+		<label for="keyphrase2">Re-enter Key Phrase:</label>
+		<input type="text" id="keyphrase2" name="keyphrase2" />
+
+		<label for="comments">Message:</label>
+		<textarea id="comments" name="comments" required></textarea>
+		<button id="btnSubmit" type="submit">Send Message</button>
+		<input type="hidden" value="43aster">
+	</form>
+</main>
+</body>
+</html>

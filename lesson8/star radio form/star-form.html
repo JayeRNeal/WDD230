@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/lesson8/star radio form/star-form.css">
+    <script src="/lesson8/star radio form/star-form.js"></script>
+</head>
+<body>
+    <form method="get">
+
+        <label for="hello">Alpha Input:</label>
+        <input type="text" id="hello" name="hello" required pattern="*[A-Z][a-z]" oninvalid="this.setCustomValidity('☝🏼 Please enter only alpha characters.')" onvalid="this.setCustomValidity('')">
+    
+        <label for="fruit">What's your favorite fruit? <abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+        <input type="text" id="fruit" name="fruit" list="l1" required pattern="[Bb]anana|[Cc]herry|[Aa]pple|[Ss]trawberry|[Ll]emon|[Oo]range" oninvalid="this.value('')">
+    
+        <label for="r">Rate the Service [ <span id="rating"></span> ]:</label>
+        <div class="rangecontainer">
+            <input type="range" min="1" max="5" id="r" name="r" list="five" required="required">
+            <div class="ratinglabels">
+                <span class="ratevalue">1</span>
+                <span class="ratevalue">2</span>
+                <span class="ratevalue">3</span>
+                <span class="ratevalue">4</span>
+                <span class="ratevalue">5</span>
+         </div>
+        </div>
+    
+        <label>Star Rating:</label>
+        <div class="stars">
+            <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+            <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+            <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+            <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+            <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+        </div>
+    
+        <label id="tasklabel" for="task" data-content="Completed the Module">Module Completed:</label>
+        <input type="checkbox" id="task" name="task" value="task">
+    
+        <input type="submit" value="Test Settings">
+    </form>
+    
+    <datalist id="l1">
+        <option>Banana</option>
+        <option>Cherry</option>
+        <option>Apple</option>
+        <option>Strawberry</option>
+        <option>Lemon</option>
+        <option>Orange</option>
+    </datalist>
+    
+    <datalist id="five">
+        <option label="1">1</option>
+        <option label="2">2</option>
+        <option label="3">3</option>
+        <option label="4">4</option>
+        <option label="5">5</option>
+    </datalist>
+    
+    <aside id="references">
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">MDN Input Range</a></li>
+            <li><a href="https://codepen.io/nevkatz/pen/OJPBBpL">Star Rating Source</a></li>
+            <li><a href="https://codepen.io/kathykato/pen/xxGObEp">CheckBox Line Through Source</a></li>
+            <li><a href="">Star Rating Source</a></li>
+        </ul>
+        </div>
+</body>
+</html>
