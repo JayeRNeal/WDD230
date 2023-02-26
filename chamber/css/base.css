@@ -360,7 +360,8 @@
     display: none;
     text-align: center;
   }
-/* discover page*/
+  
+  /* discover page*/
 
   #carnival_dis, #tablemountain_dis, #otter_dis, #ctstadium_dis,#wine_dis {
     display: none;
@@ -400,3 +401,168 @@
   .visits{
     display: block;
   }
+
+  #detailedinformation {
+    display: none;
+  }
+    
+  #join_head{ /*heading */
+    border: 1px solid rgba(0,0,0,0.5);
+    color: var(--accent1-color);
+    padding: 2%;
+    border-radius: 25px;
+    text-align: center;
+  }
+    
+  form input:required {
+    border-left: red solid 10px;
+  }
+    
+  #membershipapp {
+    padding: 2%;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr;
+    background-color: var(--accent1-color)
+  }
+    
+  .information-form legend {
+    font-size: 25px;
+    text-align: center;
+  }
+    
+    
+  .information-form { /* all 3 blocks on the page */
+    border: 3px solid var(--primary-dark);
+    grid-column: 1;
+    background: white;
+  }
+    
+  .information-form label{
+    display: block;
+    padding: 2%;
+    font-size: 24px;
+  }
+    
+  .membership-form {
+      margin-bottom: 2rem;
+  }
+    
+  .selection {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    align-items: center;
+  }
+    
+  .information {
+    grid-column: 2;
+    grid-row: 2;
+  }
+    
+  form textarea {
+    height: 10rem;
+  }
+    
+  .selection input[type="Radio"]  {
+    width: 25px;
+    height: 25px;
+    margin: 1rem;
+    align-content: flex-end;
+  }
+    
+  .bus-info input[type="text"], .bus-info input[type="textarea"],  .infoform input[type="text"],  .infoform input[type="tel"] ,  .infoform input[type="email"]{
+    font-size: 24px;
+    width: 96%;
+  }
+    
+  .bus-info textarea {
+    width: 96%;
+  }
+    
+    
+  .legend {
+    font-size: 16px;
+    
+  }
+  .membership-form label[for="goldm"], label[for="silverm"] {
+    color: rgb(165, 141, 7);
+    font-weight: bold;
+    font-size: 28px;
+  }
+  .membership-form  label[for="silverm"] {
+    color: silver;
+  }
+  .membership-form  label[for="bronzem"] {
+    color: rgb(176, 141, 87);
+    font-weight: bold;
+  }
+  .membership-form  label[for="np"] {
+    color: var(--secondary-color);
+  }
+    
+  /*table on join page */
+  table {
+    letter-spacing: 5px;
+    padding: 0%;
+    margin: 0px auto;
+    padding: 5px;
+    box-sizing: border-box;
+  } 
+  table, th, td {
+    border: 1px solid black;
+  }
+  tbody tr:nth-child(1) {
+    background-color: gold;
+  }  
+  tbody tr:nth-child(4) {
+    background-color: silver;
+  }  
+  tbody tr:nth-child(7) {
+    background-color: rgb(176, 141, 87);
+  }
+  tbody tr:nth-child(10) {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+    
+  .detailedinformation li {
+    text-align: left;
+  }
+    
+  /*Join.html button */
+
+  .subappBtn {
+    padding: 2rem;
+    background-color: rgba(220, 220, 220, 0.5);
+    color: var(--main-text);
+    text-decoration: none;
+    border: 1px solid  rgba(0,0,0,0.5);
+    outline: 1px solid var(--secondary-color);
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 80%;
+  }
+    
+  .subappBtn:hover{
+    background-color: white;
+  }
+    
+  .subappBtnsm {
+    padding: 2rem;
+    background-color: rgba(220, 220, 220, 0.5);
+    color: var(--main-text);
+    text-decoration: none;
+    border: 1px solid  rgba(0,0,0,0.5);
+    outline: 1px solid var(--secondary-color);
+    margin-top: 0%;
+    margin-left: 18%;
+  }
+    
+  .subappBtnsm:hover{
+    background-color: white;
+  }
+    
+    .subappBtn {
+      display: none;
+  }
+    

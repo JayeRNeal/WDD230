@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Home Page Build</title>
+    <meta name="description"
+  content="The Chamber of Commerce Project is a website project that will be used throughout the course as a learning project. 
+  The goal of the project is to meet the course outcomes and objectives through sequential module content and directed development 
+  specifications. You will select the municipality or town, such as your home town, to be the subject of the site. 
+  The project provides opportunities to apply the concepts presented in the weeks by planning, designing, developing, 
+  and maintaining a chamber site related site. This project will prepare you with a foundation upon which to complete the term 
+  project at the end of the semester.">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/large.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+
+  <script src="js/data_join.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div>
+      <div class=" logo">
+        <img src="images/jplogo.webp" alt="JP Logo">
+        <section class="headings">
+          <h1>Jaye Parks</h1>
+          <h2>Chamber of Commerce</h2>
+        </section>
+      </div>
+
+      <nav>
+        <ul id="primarynav">
+          <li><a class="activebutton" href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social">
+        <a href="https://www.linkedin.com" target="blank"><img src="images/inicon.png" alt="linkedin" ></a>
+        <a href="https://www.facebook.com" target="blank"><img src="images/fbicon.png" alt="Facebook"></a>
+
+        <button id="hamburgerbtn"><span>&#9776;</span><span>X</span></button>
+      </div>
+    </div>
+
+    <ul id="hamburgernav">
+      <li><a class="activebutton" href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <h2 class="currentdate">current date</h2>
+  </header>
+
+  <main id="main_join">
+    <div>
+      <h2 id="join_head">Jaye Parks Chamber of Commerce Membership Application</h2>
+    </div>
+    <form method="get" action="./thankyou.html">
+      <div id="membershipapp">
+        <div>
+          <fieldset class="information-form infoform">
+            <legend>Applicant Information</legend>
+            <label for="fname">First Name* </label>
+            <input type="text" id="fname" required>
+            <label for="lname"> Last Name* </label>
+            <input type="text" id="lname" required>
+            <label for="phone"> Cell Phone* </label>
+            <input type="tel" id="phone" placeholder="(011) 222-3333" required>
+            <label for="email"> Email* </label>
+            <input type="email" id="email" placeholder="user@email.org"
+              pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required>
+          </fieldset>
+          <fieldset class="information-form bus-info">
+            <legend>Business Information</legend>
+            <label for="bname"> Business Name*</label>
+            <input type="text" id="bname" required>
+            <label for="busposition"> Business Position </label>
+            <input type="text" id="busposition" pattern="[A-Za-z\s-]{7,}">
+            <label for="busdescription"> Business Description </label>
+            <textarea name="textarea" id="busdescription">            </textarea>
+          </fieldset>
+          <fieldset class=" information-form membership-form">
+            <legend>Membership Levels<em> (Choose one)</em></legend>
+            <div class="selection">
+              <input type="radio" id="goldm" name="membership" class="membership" value="1" checked>
+              <label for="goldm">Gold Member</label>
+              <input type="radio" id="silvehomerm" name="membership" class="membership" value="2">
+              <label for="silvehomerm">Silver Member</label>
+              <input type="radio" id="bronzem" name="membership" class="membership" value="3">
+              <label for="bronzem">Bronze Member</label>
+              <input type="radio" id="np" name="membership" class="membership" value="4">
+              <label for="np">NP Member (Non-Profit)</label>
+            </div>
+          </fieldset>
+        </div>
+        <div id="detailedinformation">
+          <table id="joindetailtable">
+            <caption>Details on Membership Levels</caption>
+            <tbody>
+              <tr>
+                <th scope="col" colspan="2">Gold Member</th>
+              </tr>
+              <tr>
+                <th scope="col">Cost: </th>
+                <th>$500</th>
+              </tr>
+              <tr>
+                <th scope="col" colspan="2">
+                  <ul>
+                    <li>Connections to Prospects, Suppliers, and More Great Networking Introductions</li>
+                    <li>Customized Research Consultations</li>
+                    <li>Member Services Consultation (10 hrs)</li>
+                    <li>Dedicated Member Services Representative</li>
+                    <li>Plus everything below</li>
+                  </ul>
+                </th>
+              </tr>
+              <tr>
+                <th scope="col" colspan="2">Silver Member</th>
+              </tr>
+              <tr>
+                <th scope="col">Cost: </th>
+                <th>$300</th>
+              </tr>
+              <tr>
+                <th scope="col" colspan="2">
+                  <ul>
+                    <li>Submit News, Event, and Press Release Submissions on our socal media</li>
+                    <li>Member Spotlight Feature</li>
+                    <li>Access to Customized Invite & Mailer Lists</li>
+                    <li>Member Services Consultation (5 hrs)</li>
+                    <li>Membership Lists Distributed Quarterly</li>
+                    <li>Plus everything below</li>
+                  </ul>
+                </th>
+              </tr>
+              <tr>
+                <th scope="col" colspan="2">Bronze Member</th>
+              </tr>
+              <tr>
+                <th scope="col">Cost: </th>
+                <th>$150</th>
+              </tr>
+              <tr>
+                <th scope="col" colspan="2">
+                  <ul>
+                    <li>Share Thought Leadership and Member Insights on our socal media</li>
+                    <li>Access to the Media Guide</li>
+                    <li>Publicize Business Milestones</li>
+                    <li>Plus everything below</li>
+                  </ul>
+                </th>
+              </tr>
+              <tr>
+                <th id="NPbucket" scope="col" colspan="2">NP Member (Non-Profit)</th>
+              </tr>
+              <tr>
+                <th scope="col">Cost: </th>
+                <th>Free</th>
+              </tr>
+              <tr>
+                <th scope="col" colspan="2">
+                  <ul>
+                    <li>Discounted tickets to Chamber Events</li>
+                    <li>Heath Insurance • 401k • Workers' Compensation • Office Supplies • Energy and Operational
+                      Efficiency</li>
+                    <li>Ribbon Cutting • Promote Open House Events</li>
+                  </ul>
+                </th>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="col" colspan="2">Compiled 12.24.2023 by Jourdon Neal</th>
+              </tr>
+            </tfoot>
+          </table>
+          <input type="submit" value="Submit Your Application" class="subappBtn">
+        </div>
+        <div>
+          <input type="submit" value="Submit Your Application" class="subappBtnsm">
+        </div>
+        <div>
+          <P>* These fields are required to be completed </P>
+          <input class="hiddenDT" type="hidden" name="hiddenDT" value="">
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <div class="footerbuild">
+      <div class="footerlogo">
+        <img src="images/jplogo.png" alt="Jaye Parks Logo">
+        <section class="footerheadings">
+          <h2>Jaye Parks</h2>
+          <h3>Chamber of Commerce</h3>
+          <p>11209 South St. Zimbabwe, AF 99294</p>
+        </section>
+      </div>
+      <div class="footercontact">
+        <a href="contactus@kpchamber.info">contactus@jayeparks.info</a>
+        <p>(801) 997-4265</p>
+        <img class="imagepin" src="images/googlemapspin.jpg" alt="Map pin">
+        <a href="https://www.google.com/maps/" target="_blank">Map Location</a>
+      </div>
+    </div>
+    <div class="copyrightupdatesmall">
+      <p>&copy; <span id="copyrightupdatesmall_year"></span> Jaye Parks Chamber Project</p>
+      <p>Jourdon Neal</p>
+      <p>WDD 230 Project</p>
+      <p>Last Updated: <span id="copyrightupdatesmall_lastup"></span></p>
+    </div>
+    <div class="copyrightupdatemedium">
+      <p>&copy; <span id="copyrightupdatemedium_year"></span> Jaye Parks Chamber Project .:|:. Jourdon Neal .:|:. WDD
+        230 Project
+      </p>
+      <p>Last Updated: <span id="copyrightupdatemedium_lastup"></span></p>
+    </div>
+    <div class="copyrightupdatelarge">
+      <p>&copy; <span id="copyrightupdatelarge_year"></span> Jaye Parks Chamber Project .:|:. Jourdon Neal .:|:. WDD
+        230 Project .:|:. Last Updated: <span id="copyrightupdatelarge_lastup"></span></p>
+    </div>
+    <script src="js/footer.js"></script>
+
+  </body>
+
+  </html>
