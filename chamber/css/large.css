@@ -223,4 +223,75 @@
     }
 
   
+  /*Directory page */
+  
+    .businesscards {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+  
+}
+  
+/*columns*/
+    #game {
+    grid-column: 1;
+    grid-row: 1;
+}
+    #Ikamva {
+    grid-column: 1;
+    grid-row: 2;
+}
+  #Jonsson {
+    grid-column: 1;
+    grid-row: 3;
+}
+  
+  
+  
+/*column 2*/
+  
+  #BCO {
+    grid-column: 2;
+    grid-row: 1;
+}
+  #pnp {
+    grid-column: 2;
+    grid-row: 2;
+}
+  
+  #hemel {
+    grid-column: 2;
+    grid-row: 3;
+}
+  
+  
+  
+/*column 3*/
+  
+#Otto {
+  grid-column: 3;
+  grid-row: 1;
+}
+#Junior {
+  grid-column: 3;
+  grid-row: 2;
+}
+#PLC {
+  grid-column: 3;
+  grid-row: 3;
+}
+  
+  
+/* Business Card List format*/
+  
+.businesscardsList .membershiplvl,.businesscardsList .physicaladdess{
+  display: flex;
+}
+  
+.businesscardsList h2{
+  font-size: 20px;
+  text-align: left;
+  width: 25rem;
+  margin: 3% 0% 0% 0%;
+  
+}  
   }

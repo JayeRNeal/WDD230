@@ -179,7 +179,138 @@
     }
   
   
+   /*Directory page */
+ 
+ .businesscards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--accent1-color);
   
+}
+
+.businesscards h2{
+  display: none;
+}
+
+.businesscards img {
+  width: 40%;
+  padding: 2%;
+  margin-left: 28%;
+  display: block;
+}
+
+.businesscards section {
+  margin-bottom: 3%;
+}
+
+.businesscards h3, .businesscards h2{
+  background-color: var(--accent2-color);
+  margin-left: 14%;
+  border: 1px solid rgba(0,0,0,0.5);
+  text-align: center;
+  background-color: var(--accent2-color);
+  padding: 1%;
+  width: 70%;
+  }
+.businesscards p{
+  margin: 0%;
+  text-align: center;
+}
+
+/*column 1*/
+#game {
+  grid-column: 1;
+  grid-row: 1;
+}
+#Ikamva {
+  grid-column: 1;
+  grid-row: 2;
+}
+#Jonsson {
+  grid-column: 1;
+  grid-row: 3;
+}
+#hemel {
+  grid-column: 1;
+  grid-row: 4;
+}
+#Otto {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+
+/*column 2*/
+
+#BCO {
+  grid-column: 2;
+  grid-row: 1;
+}
+#pnp {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#Junior {
+  grid-column: 2;
+  grid-row: 3;
+}
+#PLC {
+  grid-column: 2;
+  grid-row: 4;
+}
+#bdgridListBtns{
+  display: block;
+}
+#bdgridbtn{
+  padding: 2rem;
+  margin: 10px;
+  margin-bottom: 3%;
+
+}
+#bdlistbtn{
+  padding: 2rem;
+  margin: 10px;
+  margin-bottom: 3%;
+
+}
+
+
+/* Business Card List format*/
+
+.businesscardsList {
+  grid-template-columns: 1fr;
+}
+
+.businesscardsList section{
+  display:flex;
+  margin: 1% 0%;
+  background: var(--accent1-color);
+  padding: 10px;
+}
+.businesscardsList h2{
+  font-size: 16px;
+  text-align: left;
+  width: 10rem;
+  margin: 3% 0% 0% 0%;
+  
+}
+
+.businesscardsList .physicaladdess,.businesscardsList .busindustry,.businesscardsList .physicaladdess, .businesscardsList .membershiplvl{
+  display: none;
+}
+
+.businesscardsList .webaddress {
+  display: flex;
+}
+
+.businesscardsList img {
+  display: none;
+}
+
+.businesscardsList p{
+  padding: 1% 0.5%;
+}
 
   
 }
