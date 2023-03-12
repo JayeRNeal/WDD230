@@ -364,7 +364,7 @@
   /* discover page*/
 
   #carnival_dis, #tablemountain_dis, #otter_dis, #ctstadium_dis,#wine_dis {
-    display: none;
+    display: contents;
   }
   
   #discovermain img{
