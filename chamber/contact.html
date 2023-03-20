@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover page Chamber of Commerce</title>
+    <meta name="description"
+    content="The Chamber of Commerce Project is a website project that will be used throughout the course as a learning project. 
+    The goal of the project is to meet the course outcomes and objectives through sequential module content and directed development 
+    specifications. You will select the municipality or town, such as your home town, to be the subject of the site. 
+    The project provides opportunities to apply the concepts presented in the weeks by planning, designing, developing, 
+    and maintaining a chamber site related site. This project will prepare you with a foundation upon which to complete the term 
+    project at the end of the semester.">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+    <link rel="stylesheet" href="css/medium.css" type="text/css">
+    <link rel="stylesheet" href="css/large.css" type="text/css">
+
+    <script src="js/lazyload.js" defer></script>
+    <script src="js/loacalstorage.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+          <div class=" logo">
+            <img src="images/jplogo.webp" alt="JP Logo">
+            <section class="headings">
+              <h1>Jaye Parks</h1>
+              <h2>Chamber of Commerce</h2>
+            </section>
+        </div>
+          <nav>
+            <ul id="primarynav">
+              <li><a class="activebutton" href="index.html">Home</a></li>
+              <li><a href="discover.html">Discover</a></li>
+              <li><a href="directory.html">Directory</a></li>
+              <li><a href="join.html">Join</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="social">
+            <a href="https://www.linkedin.com" target="blank"><img src="images/rsz_linkedin.png" alt="linkedin" ></a>
+            <a href="https://www.facebook.com" target="blank"><img src="images/rsz_facebook.png" alt="Facebook"></a>
+            <button id="hamburgerbtn"><span>&#9776;</span><span>X</span></button>
+          </div>
+        </div>
+        <ul id="hamburgernav">
+          <li><a class="activebutton" href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <h2 class="currentdate">current date</h2>
+
+            <h2 id="discoverhead">Discover Events, Loacations & Demographics</h2>
+            </header>
+      <main> 
+
+        <main id="main_join">
+            <div>
+              <h2 id="join_head">Cape Town Chamber of Commerce Contact Form</h2>
+            </div>
+            <form method="get" action="./thankyou.html">
+              <div id="contactapp">
+                <fieldset class="contactapp-form infoform">
+                  <legend>Contact Information</legend>
+                  <P>* These fields are required to be completed</P>
+                  <label for="orgfullname">Full Name* </label>
+                  <input type="text" id="orgfullname" required>
+                  <label for="orgname"> Organization </label>
+                  <input type="text" id="orgname">
+                  <label for="orgmailadd">Mailing Address *</label>
+                  <input type="tel" id="orgmailadd" placeholder="123 Address, CT 8228" required>
+                  <label for="orgphone"> Cell Phone* </label>
+                  <input type="tel" id="orgphone" placeholder="(011) 222-3333" required>
+                  <label for="orgemail"> Email* </label>
+                  <input type="email" id="orgemail" placeholder="user@email.org"
+                    pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required>
+                  <label for="contPreference">Contact Preference *</label>
+                  <select id="contPreference" name="contPreference">
+                    <option value="choose">Choose.....</option>
+                    <option value="contPrephone">Phone</option>
+                    <option value="contPreemail">Email</option>
+                    <option value="contPremail">Mail</option>
+                  </select>
+                  <label for="qadescription"> Comments/Questions </label>
+                  <textarea name="textarea" id="qadescription"></textarea>
+                  <p>Jaye Parks Chamber of Commerce will not sell your contact or email information. 
+                    Our office shares information with chamber member businesses who can provide you with
+                    information. Please indicate below if we may share your request for information:</p>
+                  <div class="selectionShare">
+                    <input type="radio" id="yesShare" name="infoshare" class="infoshare" value="1" checked>
+                    <label for="yesShare">Yes, you may release this information. </label>
+                    <input type="radio" id="noShare" name="infoshare" class="infoshare" value="2">
+                    <label for="noShare">No, please do not release this information.</label>
+                  </div>
+                  <input type="submit" value="Submit Form" class="selsubformBtn">
+                </fieldset>
+                <div id="contactapp_text">
+                  <h3>----- VISIT US -----</h3>
+                  <p>Jaye Parks Chamber of Commerce</p>
+                  <p>11209 South St.</p>
+                  <p>Zimbabwe, AF 99294</p>
+                  <p>Monday – Thursday: 9:00 a.m. to 5:00 p.m.</p>
+                  <p>Friday: By Appointment Only</p>
+                  <h3>----- Our Contacts -----</h3>
+                  <p>Jaye Neal</p>
+                  <p><strong>President & CEO</strong></p>
+                  <p>(801) 222-3344, ext. 100</p>
+                  <p>===========</p>
+                  <p>Katie Bree</p>
+                  <p><strong>Director of Marketing & Membership</strong></p>
+                  <p>(801) 222-3344, ext. 101</p>
+                  <p>===========</p>
+                  <p>Dori Palmer</p>
+                  <p><strong>Operations Assistant</strong></p>
+                  <p>(801) 222-3344, ext. 104</p>
+                  <p>===========</p>
+                  <p>Ally Spjut</p>
+                  <p><strong>Bookkeeper/Grant Project Manager</strong></p>
+                  <p>(801) 222-3344, ext. 104</p>
+                  <p>===========</p>
+                </div>
+              </div>
+              <div>
+
+              </div>
+            </form>
+    </main>
+    
+  <footer>
+        <div class="footerbuild">
+          <div class="footerlogo">
+            <img src="images/jplogo.png" alt="Jaye Parks Logo">
+            <section class="footerheadings">
+              <h2>Jaye Parks</h2>
+              <h3>Chamber of Commerce</h3>
+              <p>11209 South St. Zimbabwe, AF 99294</p>
+            </section>
+          </div>
+          <div class="footercontact">
+            <a href="contactus@kpchamber.info">contactus@jayeparks.info</a>
+            <p>(801) 997-4265</p>
+            <img class="imagepin" src="images/googlepin.png" alt="Map pin">
+            <a href="https://www.google.com/maps/" target="_blank">Map Location</a>
+          </div>
+        </div>
+        <div class="copyrightupdatesmall">
+          <p>&copy; <span id="copyrightupdatesmall_year"></span> Jaye Parks Chamber
+          <p>Jourdon Neal</p>
+          <p>WDD 230 Project</p>
+          <p>Last Updated: <span id="copyrightupdatesmall_lastup"></span></p>
+        </div>
+        <div class="copyrightupdatemedium">
+          <p>&copy; <span id="copyrightupdatemedium_year"></span> Jaye Parks Chamber
+            230 Project
+          </p>
+          <p>Last Updated: <span id="copyrightupdatemedium_lastup"></span></p>
+        </div>
+        <div class="copyrightupdatelarge">
+          <p>&copy; <span id="copyrightupdatelarge_year"></span> Jaye Parks Chamber
+            230 Project .:|:. Last Updated: <span id="copyrightupdatelarge_lastup"></span></p>
+        </div>
+        <script src="js/footer.js"></script>
+      </footer>
+      </body>
+</html>

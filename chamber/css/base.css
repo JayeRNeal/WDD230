@@ -687,4 +687,77 @@
   padding: 1% 0.5%;
 }
   
-    
+ /* contact page */
+ 
+ #contactapp {
+  padding: 1%;
+  background-color: white;
+  margin: 0% 1% 2% 1%;
+}
+
+.contactapp-form legend {
+  font-size: 25px;
+  text-align: center;
+  background: white;
+}
+
+.contactapp-form { 
+  border: 3px solid var(--primary-dark);
+  grid-column: 1;
+
+  background: white;
+}
+
+.contactapp-form label{
+  display: block;
+  padding: 2%;
+  font-size: 24px;
+}
+#orgname, #qadescription {
+  width: 97%;
+}
+
+#contPreference{
+  display: block;
+  padding: 1.5%;
+  width: 98%;
+}
+
+#contPreference {
+  border-left: red solid 10px;
+}
+
+
+.selectionShare {
+  display: grid;
+  grid-template-columns: 0.25fr 1.75fr;
+  align-items: center;
+}
+
+.selectionShare input[type="Radio"]  {
+  width: 25px;
+  height: 25px;
+  margin: 1rem;
+  align-content: flex-end;
+}
+
+.selsubformBtn {
+  padding: 2rem;
+  background-color: rgba(220, 220, 220, 0.5);
+  color: var(--main-text);
+  text-decoration: none;
+  border: 1px solid  rgba(0,0,0,0.5);
+  outline: 1px solid var(--secondary-color);
+  align-self:center;
+  margin-top: 2%;
+  margin-left: 30%;
+}
+
+.selsubformBtn:hover{
+  background-color: white;
+}
+
+
+#contactapp_text h3{
+  text-align: center;
+}

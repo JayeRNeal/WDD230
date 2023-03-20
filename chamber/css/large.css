@@ -294,4 +294,28 @@
   margin: 3% 0% 0% 0%;
   
 }  
+
+/* contact page */
+#contactapp {
+  padding: 2%;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--accent1-color)
+}
+  
+  
+.contactapp-form { 
+  flex-direction: column;
+  border: 3px solid var(--primary-dark);
+  grid-column: 1 / 3;
+}
+  
+#contactapp_text {
+  grid-column: 3;
+}
+  
+.selsubformBtn {
+  margin-left: 35%;
+}
   }
