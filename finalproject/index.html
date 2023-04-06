@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlsbad's Organic Bountiful Food</title>
+    <meta name="description" content="This is the final project for WDD230. For this final project I am creating a website that is centered
+    around organic food. This orgainc business is called Bountiful Foods. The mission of Bountiful Foods is to provide organic food to in coastal 
+    California.">
+    <link rel="shortcut icon" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/visits.js"></script>
+    <script defer src="scripts/weather.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/logo.webp" alt="Bountiful Foods Logo"></a>
+        </div>
+        <a href="#" id="hamburger">&#9776;</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html" target="blank">Fresh</a></li>
+                <li><a href="about_us.html" target="blank">About Us</a></li>
+            </ul>
+        </nav>
+        <section class="socials">
+            <a href="https://www.facebook.com/" target="blank"><img src="images/facebook.webp" alt="Facebook Logo & Link to our Facebook"></a>
+            <a href="https://www.instagram.com/" target="blank"><img src="images/instagram.webp" alt="Instagram Logo & Link to our Instagram"></a>
+            <a href="https://www.linkedin.com/feed/" target="blank"><img src="images/linkedin.webp" alt="LinkedIn Logo & Link to our LinkedIn"></a>
+            <a href="https://www.youtube.com/" target="blank"><img src="images/youtube.webp" alt="Youtube Logo & Link to our Youtube"></a>
+        </section>
+        
+    </header>
+
+    <section class="date"></section>
+
+    <main class="home">
+        <h1>Bountiful Foods</h1>
+        <section id="hero">
+            <picture>
+                <source media="(min-width: 1500px)" srcset="images/hero_main.webp">
+                <source media="(min-width: 1200px)" srcset="images/bountiful_medium.webp">
+                <source media="(min-width: 840px)" srcset="images/bountiful_medium_wide.webp">
+                <source media="(min-width: 700px)" srcset="images/bountiful_medium.webp">
+                <img src="images/bountifiul_small.webp" alt="Bountiful Foods Hero Image">
+            </picture>
+            
+        </section>
+        <section id="event">
+            <h2>Carlsbad, CA Information</h2>
+            <hr>
+            <p>June 20, 2023: <i>Cook off Compitetion</i></p>
+            <p>July 4, 2023: <i>Firework Show</i></p>
+            <p>August 8, 2023: <i>Miss Organic Pageant</i></p>
+            <p>September 29, 2023: <i>Harvest Days</i></p>
+            <p>October 2, 2023: <i>Pumpkin Patch Pick</i></p>
+            <p>October 10-17, 2023: <i>Tractor Rides</i></p>
+            <p>October 18-31, 2023: <i>Haunted House</i></p>
+            <p>December 11-19, 2023: <i>Santa Selfies</i></p>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+            <div id="weather_top">
+                <h2><span id="temp"></span>&#8457;</h2>
+                <figure><img src="#" alt="Placeholder" id="weathericon">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <hr>
+            <p>Wind: <span id="wind"></span> MPH</p>
+            <p>Wind Chill: <span id="windchill"></span><span id="windDegree"></span></p>
+        </section>
+        <section id="news">
+            <h2>Bountiful Foods News</h2>
+            <hr>
+            <h3>Harvest Days</h3>
+            <p>Starting September 29th Bountiful Foods begins it harvest. We give families and individuals an opprotunity to enjoy our great scenery
+                and help local farmers harvest our produce. No experience required. <br><a href="#">Read More...</a>
+            </p>
+            <hr>
+            <h3>Cook Off Compition</h3>
+            <p>On June 14th Bountiful Foods will have it's annual Cook Off Compitetion. Food enthusists alike have an opprotunity to both showcase
+                their cooking skills and taste some great food from all over Carlsbad.<br> <a href="#">Read more...</a>
+            </p>
+            <hr>
+            <h3>Miss Organic Pageant</h3>
+            <p>Bountiful Foods annual Miss Organic Pageant begins on August 31st. We begin the day with a parade that showcases this years Pageant
+                contestants, as well as Carlsbad's local high schools. <br> <a href="#">Read more...</a>
+            </p>
+        </section>
+        <section id="join">
+            <h2>Get Fresh</h2>
+            <hr>
+            <p>Our mission is to provide fresh and healthy food options, including organic, made to order, 
+                fruit drinks and fruit bags, to the local population and to tourists visiting the coastal areas. 
+                We strive to support healthy eating, organic bounty, and convenience.</p>
+            <p>Live a more organic lifestyle! Make your own organic speciality drink.</p>
+            <input type="button" onclick="fresh.html" value="Viva Juice"> <!--Fix this. see html checker-->
+        </section>
+        <section id="spotlights">
+            <h2>Business Spotlights</h2>
+            <div id="spot1">
+                <a href="#"><h3>Bounty Groceries</h3></a>
+                <img src="images/supermarket.webp" alt="Market Place">
+            </div>
+            <div id="spot2">
+                <a href="#"><h3>Farmers Market</h3></a>
+                <img src="images/farmersmarket.webp" alt="Grocery Store">
+            </div>
+                <div id="spot3">
+                    <a href="#"><h3>Food Trucks</h3></a>
+                    <img src="images/foodtruck1.webp" alt="Bountiful Food Trucks">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="about">
+            <img src="images/logo.webp" alt="Bountiful foods Logo">
+            <div id="address">
+                <h3>Bountiful Foods</h3>
+                <p>2860 Hope Ave.</p>
+                <p>Carlsbad, CA 92008</p>
+                <a href="https://www.google.com/maps/place/2680+Hope+Ave,+Carlsbad,+CA+92008/@33.1641653,-117.3483056,
+                17z/data=!3m1!4b1!4m5!3m4!1s0x80dc721a35a049f7:0x84ea488636c215fe!8m2!3d33.1641608!4d-117.3457307" target="blank">Location</a> 
+            </div>
+            <div id="contact">
+                <h3>Contact Us</h3>
+                <p>info@bountifulfoods.com</p>
+                <p>(760)-931-2197</p>
+            </div>
+        </section>
+        <section id="copyright">
+            <p>&copy; <span id="copyrightYear"></span> Bountiful Foods .:. Jourdon Neal .:. WDD230</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <p><span id="lastVisited"></span></p>
+        </section>
+    </footer>
+</body>
+
+</html>

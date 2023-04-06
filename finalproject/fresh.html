@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlsbad's Bountiful Foods Fresh Nutrition</title>
+    <meta name="description" content="This is the final project for WDD230. For this final project I am creating a website that is centered
+    around organic food. This orgainc business is called Bountiful Foods. The mission of Bountiful Foods is to provide organic food to in coastal 
+    California.">
+    <link rel="shortcut icon" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/visits.js"></script>
+    <script defer src="scripts/thanks.js"></script>
+    <script defer src="scripts/video.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/logo.webp" alt="Bountiful Foods Logo"></a>
+        </div>
+        <a href="#" id="hamburger">&#9776;</a>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="blank">Home</a></li>
+                <li><a href="fresh.html" target="blank">Fresh</a></li>
+                <li><a href="about_us.html" target="blank">About Us</a></li>
+            </ul>
+        </nav>
+        <section class="socials">
+            <a href="https://www.facebook.com/" target="blank"><img src="images/facebook.webp" alt="Facebook Logo and Link to our Facebook"></a>
+            <a href="https://www.instagram.com/" target="blank"><img src="images/instagram.webp" alt="Instagram Logo and Link to our Instagram"></a>
+            <a href="https://www.linkedin.com/feed/" target="blank"><img src="images/linkedin.webp" alt="LinkedIn Logo and Link to our LinkedIn"></a>
+            <a href="https://www.youtube.com/" target="blank"><img src="images/youtube.webp" alt="Youtube Logo and Link to our Youtube"></a>
+        </section>
+        
+    </header>
+    <section class="date"></section>
+            <main class="join">
+                <div class="form">
+                    <h1>Join Us</h1>
+                    <form action="thanku.html" method="GET" autocomplete="on">
+                        <label for="fname">
+                            First Name
+                            <input type="text" id="fname" name="fname" required>
+                        </label>
+        
+                        <label for="lname">
+                            Last Name
+                            <input type="text" id="lname" name="lname" required>
+                        </label>
+        
+                        <label for="email">
+                            Email
+                            <input type="email" placeholder="johndoe@example.com" id="email" name="email" required>
+                        </label>
+        
+                        <label for="phone">
+                            Phone
+                            <input type="tel" placeholder="(012) 345-6789" id="phone" name="phone" required>
+                        </label>
+        
+                        <label for="membership">
+                            
+                            <select id="membership0" name="membership">
+                                <option selected disabled hidden>Select a Fruit to Blend</option>
+                                <option value="6">Apple</option><option value="35">Apricot</option><option value="84">Avocado</option>
+                                <option value="64">Banana</option><option value="33">Blackberry</option><option value="9">Cherry</option>
+                                <option value="80">Dragonfruit</option><option value="60">Durian</option><option value="76">Feijoa</option>
+                                <option value="68">Fig</option><option value="69">Gooseberry</option><option value="81">Grape</option>
+                                <option value="47">Grapes</option><option value="72">GreenApple</option>
+                                <option value="37">Guava</option><option value="66">Kiwi</option><option value="85">Kiwifruit</option>
+                                <option value="26">Lemon</option><option value="44">Lime</option><option value="65">Lingonberry</option>
+                                <option value="67">Lychee</option><option value="27">Mango</option><option value="41">Melon</option>
+                                <option value="82">Morus</option><option value="2">Orange</option><option value="42">Papaya</option>
+                                <option value="70">Passionfruit</option><option value="4">Pear</option><option value="52">Persimmon</option>
+                                <option value="10">Pineapple</option><option value="78">Pitahaya</option><option value="71">Plum</option>
+                                <option value="79">Pomegranate</option><option value="23">Raspberry</option><option value="2">Strawberry</option>
+                                <option value="77">Tangerine</option><option value="5">Tomato</option><option value="25">Watermelon</option>
+                            </select>
+                        </label>
+
+    
+                            <select id="membership1" name="membership">
+                                <option selected disabled hidden>Select a Fruit to Blend</option>
+                                <option value="6">Apple</option><option value="35">Apricot</option><option value="84">Avocado</option>
+                                <option value="64">Banana</option><option value="33">Blackberry</option><option value="9">Cherry</option>
+                                <option value="80">Dragonfruit</option><option value="60">Durian</option><option value="76">Feijoa</option>
+                                <option value="68">Fig</option><option value="69">Gooseberry</option><option value="81">Grape</option>
+                                <option value="47">Grapes</option><option value="72">GreenApple</option>
+                                <option value="37">Guava</option><option value="66">Kiwi</option><option value="85">Kiwifruit</option>
+                                <option value="26">Lemon</option><option value="44">Lime</option><option value="65">Lingonberry</option>
+                                <option value="67">Lychee</option><option value="27">Mango</option><option value="41">Melon</option>
+                                <option value="82">Morus</option><option value="2">Orange</option><option value="42">Papaya</option>
+                                <option value="70">Passionfruit</option><option value="4">Pear</option><option value="52">Persimmon</option>
+                                <option value="10">Pineapple</option><option value="78">Pitahaya</option><option value="71">Plum</option>
+                                <option value="79">Pomegranate</option><option value="23">Raspberry</option><option value="2">Strawberry</option>
+                                <option value="77">Tangerine</option><option value="5">Tomato</option><option value="25">Watermelon</option>
+                                
+                            </select>
+                        </label>
+
+                        <label for="membership">
+    
+                            <select id="membership2" name="membership">
+                                <option selected disabled hidden>Select a Fruit to Blend</option>
+                                <option value="6">Apple</option><option value="35">Apricot</option><option value="84">Avocado</option>
+                                <option value="64">Banana</option><option value="33">Blackberry</option><option value="9">Cherry</option>
+                                <option value="80">Dragonfruit</option><option value="60">Durian</option><option value="76">Feijoa</option>
+                                <option value="68">Fig</option><option value="69">Gooseberry</option><option value="81">Grape</option>
+                                <option value="47">Grapes</option><option value="72">GreenApple</option>
+                                <option value="37">Guava</option><option value="66">Kiwi</option><option value="85">Kiwifruit</option>
+                                <option value="26">Lemon</option><option value="44">Lime</option><option value="65">Lingonberry</option>
+                                <option value="67">Lychee</option><option value="27">Mango</option><option value="41">Melon</option>
+                                <option value="82">Morus</option><option value="2">Orange</option><option value="42">Papaya</option>
+                                <option value="70">Passionfruit</option><option value="4">Pear</option><option value="52">Persimmon</option>
+                                <option value="10">Pineapple</option><option value="78">Pitahaya</option><option value="71">Plum</option>
+                                <option value="79">Pomegranate</option><option value="23">Raspberry</option><option value="2">Strawberry</option>
+                                <option value="77">Tangerine</option><option value="5">Tomato</option><option value="25">Watermelon</option>
+                            </select>
+                        </label>
+        
+                        <label for="desc">
+                            Special Instructions
+                            <textarea name="desc" id="desc"></textarea>
+                        </label>
+        
+                        <input type="submit" id="submit" value="submit">
+                        
+                    </form>
+                </div>
+        
+                <div class="membershipLevels">
+                    <div class="smoothevid">
+                        <h2>Try Bountiful Foods 'Viva Smoothies'</h2>
+                        <p>
+                            Combine up to three different flavors of organic goodness.
+                        </p>
+                    </div>
+                    <div class="content-left">
+                        <video controls id="myVideo" width="500" height="810" autoplay></video>
+                    </div>
+                </div>
+            </main>
+    <footer>
+        <section id="about">
+            <img src="images/logo.webp" alt="Bountiful foods Logo">
+            <div id="address">
+                <h3>Bountiful Foods</h3>
+                <p>2860 Hope Ave.</p>
+                <p>Carlsbad, CA 92008</p>
+                <a href="https://www.google.com/maps/place/2680+Hope+Ave,+Carlsbad,+CA+92008/@33.1641653,-117.3483056,
+                17z/data=!3m1!4b1!4m5!3m4!1s0x80dc721a35a049f7:0x84ea488636c215fe!8m2!3d33.1641608!4d-117.3457307" target="blank">Location</a> 
+            </div>
+            <div id="contact">
+                <h3>Contact Us</h3>
+                <p>info@bountifulfoods.com</p>
+                <p>(760)-931-2197</p>
+            </div>
+        </section>
+        <section id="copyright">
+            <p>&copy; <span id="copyrightYear"></span> Bountiful Foods .:. Jourdon Neal .:. WDD230</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <p><span id="lastVisited"></span></p>
+        </section>
+    </footer>
+</body>
+</html>
